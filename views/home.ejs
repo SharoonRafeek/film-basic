@@ -1,7 +1,6 @@
 <%- include("partials/header"); %>
 
 <body>
-  
   <nav class="navbar navbar-expand-lg navbar-dark">
     <a class="navbar-brand brand" href="">Film Basic</a>
     <button
@@ -15,7 +14,10 @@
     >
       <span class="navbar-toggler-icon"></span>
     </button>
-    <div class="collapse navbar-collapse navbar-items" id="navbarSupportedContent">
+    <div
+      class="collapse navbar-collapse navbar-items"
+      id="navbarSupportedContent"
+    >
       <ul class="navbar-nav ml-auto">
         <li class="nav-item">
           <a class="nav-link" href="#footer">Contact</a>
@@ -26,31 +28,44 @@
       </ul>
     </div>
   </nav>
-  
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
-<div class="container">
-    <br/>
-	<div class="row justify-content-center">
-                        <div class="col-12 col-md-10 col-lg-8">
-                            <form class="card card-sm">
-                                <div class="card-body row no-gutters align-items-center">
-                                    <div class="col-auto">
-                                        <i class="fas fa-search h4 text-body"></i>
-                                    </div>
-                                    <!--end of col-->
-                                    <div class="col">
-                                        <input class="form-control form-control-lg form-control-borderless" type="search" placeholder="Search for a film or a series">
-                                    </div>
-                                    <!--end of col-->
-                                    <div class="col-auto">
-                                        <button class="btn btn-lg btn-success" type="submit">Search</button>
-                                    </div>
-                                    <!--end of col-->
-                                </div>
-                            </form>
-                        </div>
-                        <!--end of col-->
-                    </div>
-</div>
-  
-<%- include("partials/footer"); %>
+
+  <link
+    rel="stylesheet"
+    href="https://use.fontawesome.com/releases/v5.1.0/css/all.css"
+    integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt"
+    crossorigin="anonymous"
+  />
+  <div class="container">
+    <br />
+    <div class="row justify-content-center">
+      <div class="col-12 col-md-10 col-lg-8">
+        <form class="card card-sm" accept="/" method="POST">
+          <div class="card-body row no-gutters align-items-center">
+            <div class="col-auto">
+              <i class="fas fa-search h4 text-body"></i>
+            </div>
+            <!--end of col-->
+            <div class="col">
+              <input
+                class="form-control form-control-lg form-control-borderless"
+                name="title"
+                type="search"
+                placeholder="Search for a film or a series"
+              />
+            </div>
+            <!--end of col-->
+            <div class="col-auto">
+              <button class="btn btn-lg btn-success" type="submit">
+                Search
+              </button>
+            </div>
+            <!--end of col-->
+          </div>
+        </form>
+      </div>
+      <!--end of col-->
+    </div>
+  </div>
+
+  <%- include("partials/footer"); %>
+</body>
