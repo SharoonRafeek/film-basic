@@ -11,14 +11,34 @@
 }
 
 body {
-  background-color: #114e60;
+  background-color: #2b2e4a;
   color: white;
 }
 
-.brand {
-  margin-left: 30%;
+
+.main {
+  text-align: center;
+  margin-top: 100;
+  font-family: 'Varela Round', sans-serif;
 }
 
-.navbar-items {
-  margin-right: 30%;
+.main-details {
+  font-family: 'Varela Round', sans-serif;
+  text-align: center;
+}
+
+p {
+  font-size: larger;
+}
+
+table {
+  font-size: larger;
+}
+
+.title {
+  font-family: 'Varela Round', sans-serif;
+  text-align: center;
+  text-transform: uppercase;
+  margin-bottom: 50;
+  margin-top: 50;
 }

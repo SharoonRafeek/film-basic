@@ -1,33 +1,13 @@
 <%- include("partials/header"); %>
 
-<body>
-  <nav class="navbar navbar-expand-lg navbar-dark">
-    <a class="navbar-brand brand" href="">Film Basic</a>
-    <button
-      class="navbar-toggler"
-      type="button"
-      data-toggle="collapse"
-      data-target="#navbarSupportedContent"
-      aria-controls="navbarSupportedContent"
-      aria-expanded="false"
-      aria-label="Toggle navigation"
-    >
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div
-      class="collapse navbar-collapse navbar-items"
-      id="navbarSupportedContent"
-    >
-      <ul class="navbar-nav ml-auto">
-        <li class="nav-item">
-          <a class="nav-link" href="#footer">Contact</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#pricing">About</a>
-        </li>
-      </ul>
-    </div>
-  </nav>
+  <div class="main">
+    <h1>Film Basic</h1>
+    <br>
+    <p>
+      Search for a film or a series to know </br>
+      the basic details such as imdb rating, plot, director, actors etc.
+    </p>
+  </div>
 
   <link
     rel="stylesheet"
@@ -50,12 +30,12 @@
                 class="form-control form-control-lg form-control-borderless"
                 name="title"
                 type="search"
-                placeholder="Search for a film or a series"
+                placeholder="Search"
               />
             </div>
             <!--end of col-->
             <div class="col-auto">
-              <button class="btn btn-lg btn-success" type="submit">
+              <button class="btn btn-lg btn-secondary" type="submit">
                 Search
               </button>
             </div>
@@ -68,4 +48,3 @@
   </div>
 
   <%- include("partials/footer"); %>
-</body>
